@@ -52,3 +52,10 @@ area = 200
 
 - CI runs `lake build` + `lake exe hwh_core` on every push and pull request.
 - If a build fails on first run, it’s usually a missing `elan`/`lake` on `PATH` or a proxy blocking downloads; fix the environment and re-run.
+
+### Pre-commit versions (pinned)
+
+As of 2026-03-24, the latest versions are:
+
+- `pre-commit` (the framework): `4.5.1` (released 2025-12-16): https://pypi.org/project/pre-commit/
+- `pre-commit-hooks` (hook collection): `6.0.0` (released 2025-08-09): https://pypi.org/project/pre-commit-hooks/
