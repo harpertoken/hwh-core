@@ -52,6 +52,7 @@ area = 200
 
 - CI runs `lake build` + `lake exe hwh_core` on every push and pull request.
 - If a build fails on first run, it’s usually a missing `elan`/`lake` on `PATH` or a proxy blocking downloads; fix the environment and re-run.
+- Repo hooks/policy are aligned with our dotfiles setup: https://github.com/dotfiles-mac (e.g., strict Conventional Commit messages enforced on push).
 
 ### Pre-commit versions (pinned)
 
