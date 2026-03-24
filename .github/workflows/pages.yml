@@ -28,7 +28,7 @@ jobs:
       - name: upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: "site"
 
       - name: deploy
         id: deployment
