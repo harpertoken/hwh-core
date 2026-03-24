@@ -60,3 +60,10 @@ As of 2026-03-24, the latest versions are:
 
 - `pre-commit` (the framework): `4.5.1` (released 2025-12-16): https://pypi.org/project/pre-commit/
 - `pre-commit-hooks` (hook collection): `6.0.0` (released 2025-08-09): https://pypi.org/project/pre-commit-hooks/
+
+### Website (separate branch)
+
+This repo has a minimal static webpage on the `site` branch (kept out of `main` on purpose).
+
+- Content lives under `site/` on that branch (including `site/assets/cover.png`).
+- A GitHub Pages deploy workflow also lives on that branch at `.github/workflows/pages.yml` and runs only for pushes to `site`.
