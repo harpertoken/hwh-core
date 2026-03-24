@@ -4,6 +4,7 @@
 .lake/
 lake-packages/
 build/
+lake-manifest.json
 
 # Editor
 .vscode/

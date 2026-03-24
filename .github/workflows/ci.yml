@@ -1,0 +1,23 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: install elan
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o elan-init.sh
+          sh elan-init.sh -y
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: build
+        run: lake build
+
+      - name: smoke
+        run: lake exe hwh_core

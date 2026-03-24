@@ -18,17 +18,17 @@ structure Width where
 
 namespace Height
 
-def mk (n : Nat) : Height := ⟨n⟩
+def ofNat (n : Nat) : Height := ⟨n⟩
 
-@[simp] theorem val_mk (n : Nat) : (Height.mk n).val = n := rfl
+@[simp] theorem val_ofNat (n : Nat) : (Height.ofNat n).val = n := rfl
 
 end Height
 
 namespace Width
 
-def mk (n : Nat) : Width := ⟨n⟩
+def ofNat (n : Nat) : Width := ⟨n⟩
 
-@[simp] theorem val_mk (n : Nat) : (Width.mk n).val = n := rfl
+@[simp] theorem val_ofNat (n : Nat) : (Width.ofNat n).val = n := rfl
 
 end Width
 
